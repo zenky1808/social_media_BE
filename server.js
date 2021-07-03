@@ -26,5 +26,5 @@ app.use(cookieParser());
 //Route use
 route(app);
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Server app is running at http://localhost:${port}`)
 });
