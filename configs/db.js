@@ -10,7 +10,7 @@ async function connect(){
     });
     console.log('****************************')
     console.log('*    Starting Server')
-    console.log(`*    Port: ${DB}}`)
+    console.log(`*    Port: ${DB}`)
     console.log(`*    Database: MongoDB`)
     console.log(`*    Connect successfully `)
     console.log('****************************')
