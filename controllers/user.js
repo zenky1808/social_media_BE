@@ -15,7 +15,7 @@ module.exports.getUser = async (req, res) => {
 module.exports.getUserById = async (req, res) => {
     try {
         const id = req.params.id
-        const user = await  User.findOne({_id: id})
+        const user = await User.findOne({_id: id})
         !user && res.status(404).json("User not found");
         res.status(200).json({data: user})
     } catch (error) {

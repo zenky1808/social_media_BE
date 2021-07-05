@@ -10,10 +10,6 @@ const helmet = require('helmet');
 const db = require('./configs/db')
 const route = require('./routes/index');
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-});
-
 //app use
 app.use(logger('dev'));
 app.use(express.json());

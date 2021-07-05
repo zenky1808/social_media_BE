@@ -1,5 +1,6 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
-const DB = `mongodb://localhost:27017/social_media`
+const DB = process.env.URL_DB;
 async function connect(){
   try {
     await mongoose.connect(DB,{
